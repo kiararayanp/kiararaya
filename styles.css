@@ -173,3 +173,38 @@ footer {
         align-items: center;
     }
 }
+/* Hamburger Menu (For Mobile) */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show only in mobile view */
+    }
+
+    nav ul {
+        display: none; /* Initially hide mobile menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
