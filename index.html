@@ -5,41 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiara Raya | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <style></style>
-
 </head>
 <body>
     <header>
         <nav>
             <h1>Kiara Raya</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links">
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="hero">
+    <section class="hero" onclick="closeMenu()">
         <div class="content">
             <h2>Hi, I'm Kiara Raya</h2>
             <p>SEO Executive | Digital Marketer</p>
-            <a href="#portfolio" class="btn">View My Work</a>
+            <a href="#portfolio" class="btn" onclick="closeMenu()">View My Work</a>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about" onclick="closeMenu()">
         <h2>About Me</h2>
         <p>I'm committed to continuously improving my skills on keyword research, on-page optimization, off-page optimization, and SEO Reporting. I'm enthusiastic about helping businesses grow and succeed in the digital world.</p>
     </section>
     
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" onclick="closeMenu()">
         <h2>Portfolio</h2>
         <div class="projects">
             <div class="project-card">Project 1</div>
@@ -48,10 +44,10 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" onclick="closeMenu()">
         <h2>Contact Me</h2>
         <p>Let's connect! Reach out to me via email or social media.</p>
-        <p>Email: <a href="mailto:your.email@example.com">kiararayanp@gmail.com</a></p>
+        <p>Email: <a href="mailto:kiararayanp@gmail.com">kiararayanp@gmail.com</a></p>
         <div class="social-icons">
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/kiara-raya-3a4a2428a/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -59,8 +55,10 @@
         </div>
     </section>
 
-    <footer>
+    <footer onclick="closeMenu()">
         <p>&copy; 2025 Kiara Raya. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
