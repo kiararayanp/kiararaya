@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 18px; /* Adjust as needed */
+
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+nav h1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav ul li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+nav a:hover {
+    color: #667eea;
+}
+.hero {
+    text-align: center;
+    padding: 150px 20px 100px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff7eb3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.portfolio, .about, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.project-card {
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.social-icons a {
+    margin: 0 10px;
+    font-size: 28px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+.social-icons a:hover {
+    color: #764ba2;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
